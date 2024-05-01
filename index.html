@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <style>
+    body{
+        background-color: yellow;
+    }
+    button {
+        border-color: blue;
+        border-color: black;
+    
+    }
+    
+</style>
+<body>
+<button onclick="abc()">Click me</button>
+
+ -->
+    <h1>TASK-PASSWORD GENERATOR</h1>
+    
+    <script>
+
+// function greet() {
+//     console.log('hellow there');
+//     console.log(5+5);
+// }
+// greet()
+
+
+
+// function greet() {
+//     console.log('hellow there');
+//     console.log(5+5);
+// }
+
+// function abc() {
+//     let random = (Math.random())*9;
+//     console.log(random);
+    
+// }
+
+// function abc() {
+//     var name = prompt("enter your number");
+// console.log(name);
+    
+// }
+function generatepassword(length) {
+    var charset = "gftyiokvtioaertgfvABJJHREUOIUYDGUYFB12345678999765431134";
+    var password = "";
+    for (var i = 0; i < length; i++){
+        var randomindex = Math.floor(Math.random()*charset.length);
+        password += charset[randomindex];
+    }
+    return password;
+}
+var password = generatepassword(8)
+document.write(password);
+
+
+
+
+
+    </script>
+</body>
+</html>
